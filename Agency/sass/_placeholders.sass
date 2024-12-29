@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'utilities'
     
 %title-text-shadow
     text-shadow: 3px 2px variables.$black
@@ -16,6 +17,9 @@
     .job-card-title, .job-card-cover, .job-card-description
         opacity: 0
 
+        @include utilities.mobile
+            opacity: 1
+            
     &:hover
         .job-card-title, .job-card-cover, .job-card-description
             opacity: 1
