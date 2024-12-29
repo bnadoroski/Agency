@@ -1,0 +1,25 @@
+@use 'variables'
+
+.btn
+    padding: .6rem 1rem
+    border: 1px solid variables.$light-color
+    border-radius: 5px
+    text-transform: uppercase
+    transition: .3s
+    color: variables.$light-color
+
+    &:hover
+        border-color: variables.$primary-color
+        color: variables.$primary-color
+
+    &-primary
+        background: variables.$primary-color
+        border-color: variables.$primary-color
+
+        &:hover
+            background-color: transparent
+
+    &-rounded
+        margin-top: 1rem
+        border-radius: 2rem
+        padding: 1rem 1.5rem
